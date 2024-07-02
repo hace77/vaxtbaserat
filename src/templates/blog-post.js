@@ -50,6 +50,8 @@ class BlogPostTemplate extends React.Component {
           title={post.title}
           content={post.description}
         />
+
+
         <div className={styles.container}>
           <span className={styles.meta}>
             {post.author?.name} &middot;{' '}
@@ -58,6 +60,7 @@ class BlogPostTemplate extends React.Component {
           </span>
           <div className={styles.article}>
             <div className={styles.body}>
+              <iframe className={styles.video}src={post.videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               {post.body?.raw && renderRichText(post.body, options)}
             </div>
             <Tags tags={post.tags} />
@@ -99,6 +102,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
+      videoUrl
       author {
         name
       }
