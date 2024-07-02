@@ -21,6 +21,7 @@
 
 .body {
   max-width: 48rem;
+  background-color: blue;
 }
 
 .article a {

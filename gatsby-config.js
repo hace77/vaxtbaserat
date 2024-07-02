@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "Växtbaserat",
+    description: "Västbaserat - allt om växtbaserad mat",
   },
   plugins: [
     "gatsby-transformer-sharp",
