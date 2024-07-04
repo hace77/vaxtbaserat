@@ -7,11 +7,13 @@
   --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
   --font-serif: 'Times New Roman', Times, serif;
+  --header: "satisfy";
 
   /* palette */
   --white: #fff;
   --black: #000;
   --black-fade-5: rgba(0, 0, 0, 0.05);
+  --green: #49ab81;
 
   /* radii */
   --radius-sm: 4px;
@@ -59,6 +61,7 @@
   /* text */
   /* color */
   --text-color: var(--black);
+  --logo-color: var(--green);
   /* size */
   --text-lead: var(--text-lg);
   --text-prose: var(--text-md);

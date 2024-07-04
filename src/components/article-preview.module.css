@@ -9,6 +9,7 @@
 
 .title {
   display: inline-block;
+  font-family: var(--header);
   font-size: var(--text-lg);
   margin-bottom: var(--space-xs);
   margin-top: var(--space-lg);
