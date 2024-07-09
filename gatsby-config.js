@@ -21,6 +21,7 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+<<<<<<< HEAD
     {
     resolve: 'gatsby-plugin-google-tagmanager',
     options: {
@@ -40,5 +41,7 @@ module.exports = {
     display: 'swap'
   },
 },
+=======
+>>>>>>> parent of 67bc5e8 (many changes)
   ],
 };

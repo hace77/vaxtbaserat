@@ -10,9 +10,13 @@
   "dependencies": {
     "@contentful/rich-text-plain-text-renderer": "^15.12.1",
     "gatsby": "^5.5.0",
+<<<<<<< HEAD
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
+=======
+    "gatsby-plugin-image": "^3.5.0",
+>>>>>>> parent of 67bc5e8 (many changes)
     "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
