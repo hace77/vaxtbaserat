@@ -52,8 +52,6 @@ class BlogPostTemplate extends React.Component {
           content={post.description}
           video={post.videoUrl}
         />
-
-
         <div className={styles.container}>
           <span className={styles.meta}>
             {post.author?.name} &middot;{' '}
@@ -105,7 +103,6 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
-      videoUrl
       author {
         name
       }
