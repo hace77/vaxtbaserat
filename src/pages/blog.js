@@ -31,6 +31,7 @@ export const pageQuery = graphql`
         slug
         publishDate(formatString: "MMMM Do, YYYY")
         tags
+        videoUrl
         heroImage {
           gatsbyImage(
             layout: FULL_WIDTH

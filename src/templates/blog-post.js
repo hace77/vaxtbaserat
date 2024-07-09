@@ -12,7 +12,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Tags from '../components/tags'
 import * as styles from './blog-post.module.css'
-console.log("test");
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
@@ -40,7 +40,6 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        
         <Seo
           title={post.title}
           description={plainTextDescription}
@@ -50,18 +49,18 @@ class BlogPostTemplate extends React.Component {
           image={post.heroImage?.gatsbyImage}
           title={post.title}
           content={post.description}
-          video={post.videoUrl}
         />
+
+
         <div className={styles.container}>
           <span className={styles.meta}>
             {post.author?.name} &middot;{' '}
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
             {timeToRead} minute read
           </span>
-          <div id='videoUrl'>{post.videoUrl}</div>
           <div className={styles.article}>
-            
             <div className={styles.body}>
+              <iframe className={styles.video}src={post.videoUrl} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               {post.body?.raw && renderRichText(post.body, options)}
             </div>
             <Tags tags={post.tags} />
@@ -103,6 +102,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
+      videoUrl
       author {
         name
       }
