@@ -21,16 +21,5 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
-    {
-    resolve: 'gatsby-plugin-google-tagmanager',
-    options: {
-      id: 'GTM-WXVC83RP',
-      includeInDevelopment: false,
-      defaultDataLayer: { platform: "gatsby" }
-      
-
-
-},
-},
   ],
 };
