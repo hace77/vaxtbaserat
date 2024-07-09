@@ -21,30 +21,16 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
-<<<<<<< HEAD
-<<<<<<< HEAD
     {
     resolve: 'gatsby-plugin-google-tagmanager',
     options: {
       id: 'GTM-WXVC83RP',
-      includeInDevelopment: true,
+      includeInDevelopment: false,
       defaultDataLayer: { platform: "gatsby" }
-},
-},
+      
 
-{
-  resolve: `gatsby-plugin-google-fonts`,
-  options: {
-    fonts: [
-      `Satisfy`,
-      `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
-    ],
-    display: 'swap'
-  },
+
 },
-=======
->>>>>>> parent of 67bc5e8 (many changes)
-=======
->>>>>>> parent of 67bc5e8 (many changes)
+},
   ],
 };
