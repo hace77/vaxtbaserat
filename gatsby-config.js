@@ -22,6 +22,7 @@ module.exports = {
       },
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     {
     resolve: 'gatsby-plugin-google-tagmanager',
     options: {
@@ -41,6 +42,8 @@ module.exports = {
     display: 'swap'
   },
 },
+=======
+>>>>>>> parent of 67bc5e8 (many changes)
 =======
 >>>>>>> parent of 67bc5e8 (many changes)
   ],
